@@ -1,22 +1,20 @@
 # Objective-C 内存管理
 
-* [Objective-C 内存管理](#objective-c-内存管理)
-	* [堆(heap)和栈(stack)](#堆heap和栈stack)
-	* [引用计数](#引用计数httpszhwikipediaorgwikie5bc95e794a8e8aea1e695b0)
-	* [MRC 与 ARC](#mrc-与-arc)
-	* [管理对象](#管理对象)
-		* [(ARC) CF 对象和 OC 对象的内存管理权转换](#arc-cf-对象和-oc-对象的内存管理权转换)
-	* [NSAutoreleasePool](#nsautoreleasepool)
-		* [ARC 下的 autoreleasepool](#arc-下的-autoreleasepool)
-		* [MRC 下的 autoreleasepool](#mrc-下的-autoreleasepool)
-	* [MRC(Mannul Reference Counting)](#mrcmannul-reference-counting)
-		* [对象操作的四个类别](#对象操作的四个类别)
-		* [四个法则](#四个法则)
-	* [ARC (Automatic Reference Counting)](#arc-automatic-reference-counting)
-		* [变量标识符](#变量标识符)
-		* [属性标识符](#属性标识符)
-	* [参考资料](#参考资料)
-
+- [堆(heap)和栈(stack)](#堆heap和栈stack)
+- [引用计数](#引用计数httpszhwikipediaorgwikie5bc95e794a8e8aea1e695b0)
+- [MRC 与 ARC](#mrc-与-arc)
+- [管理对象](#管理对象)
+  - [(ARC) CF 对象和 OC 对象的内存管理权转换](#arc-cf-对象和-oc-对象的内存管理权转换)
+- [NSAutoreleasePool](#nsautoreleasepool)
+  - [ARC 下的 autoreleasepool](#arc-下的-autoreleasepool)
+  - [MRC 下的 autoreleasepool](#mrc-下的-autoreleasepool)
+- [MRC(Mannul Reference Counting)](#mrcmannul-reference-counting)
+  - [对象操作的四个类别](#对象操作的四个类别)
+  - [四个法则](#四个法则)
+- [ARC (Automatic Reference Counting)](#arc-automatic-reference-counting)
+  - [变量标识符](#变量标识符)
+  - [属性标识符](#属性标识符)
+- [参考资料](#参考资料)
 
 ## 堆(heap)和栈(stack)
 
@@ -99,11 +97,11 @@ NSObject *ojb2 = [[NSObject alloc]init];
 
 ### 对象操作的四个类别
 
-| 对象操作 | 应的 retainCount | 变化 |
-| -------- | ---------------- | ---- |
-| 持有对象 | retain           | +1   |
-| 释放对象 | release          | -1   |
-| 废弃对象 | dealloc          | -    |
+| 对象操作 | 对应的 retainCount | 变化 |
+| -------- | ------------------ | ---- |
+| 持有对象 | retain             | +1   |
+| 释放对象 | release            | -1   |
+| 废弃对象 | dealloc            | -    |
 
 ### 四个法则
 
