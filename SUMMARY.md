@@ -3,7 +3,8 @@
 - [Introduction](README.md)
 - 基础知识
   - 计算机网络
-  - [数据结构与算法](basic/algo/README.md)
+  - [匿名函数 VS 闭包](doc/Basic/ClosureVSLambda.md)
+  - [数据结构与算法](doc/Basic/algo/README.md)
     <!-- - [链表](basic/algo/Linked-List.md)
     - [树](basic/algo/Tree.md)
     - [哈希表](basic/algo/Hash-Table.md)
